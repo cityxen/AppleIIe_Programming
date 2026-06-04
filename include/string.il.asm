@@ -1,15 +1,16 @@
-;===========================================================================
-; CityXen Apple IIe Library - String Inline Library Hub
-; Imports all string/ subfolder modules.
-;===========================================================================
+#importonce
+//===========================================================================
+// CityXen Apple IIe Library - String Inline Library Hub
+// Imports all string/ subfolder modules.
+//===========================================================================
 
-!source "string/strings.asm"
-!source "string/strcpy.asm"
-!source "string/strlen.asm"
-!source "string/string_buffer.asm"
-!source "string/string_ascii_to_appleii.asm"
-!source "string/string_hex_to_val.asm"
-!source "string/u_calculate_screen_pos.asm"
-!source "string/u_calculate_color_pos.asm"
+#import "string/strings.asm"
+#import "string/strcpy.asm"
+#import "string/strlen.asm"
+#import "string/string_buffer.asm"
+#import "string/string_ascii_to_appleii.asm"
+#import "string/string_hex_to_val.asm"
+#import "string/u_calculate_screen_pos.asm"
+#import "string/u_calculate_color_pos.asm"
 
-;===========================================================================
+//===========================================================================

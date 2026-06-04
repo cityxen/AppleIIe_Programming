@@ -1,21 +1,35 @@
-;===========================================================================
-; CityXen Apple IIe Library - Main Include Hub
-;
-; !source this file once per project to pull in all definitions and macros.
-; Then !source CityXenLibCode.asm at the LINK point (once, in a code segment)
-; to emit the subroutine implementations.
-;
-; Usage:
-;   !source "../include/CityXenLib.asm"
-;   ; ... your code using macros and constants ...
-;   +CityXenUpstart my_entry
-;   ; at the end of your code segment:
-;   !source "../include/CityXenLibCode.asm"
-;===========================================================================
+//===========================================================================
+// CityXen Apple IIe Library - Main Include Hub
+//
+// #import this file once per project to pull in all definitions, macros,
+// and inline subroutines.
+//
+// Usage:
+//   #import "../include/CityXenLib.asm"
+//   // ... your code using macros and constants ...
+//   CityXenUpstart(my_entry)
+//===========================================================================
 
-!source "Constants.asm"
-!source "Macros.asm"
-!source "DrawAppleScreen.asm"
-;!source "Music.asm"             ; Uncomment to include speaker music system
+.cpu _65C02     // Apple IIe uses the 65C02 processor
 
-;===========================================================================
+#import "Constants.asm"
+#import "Macros.asm"
+#import "sys.il.asm"
+#import "timers.il.asm"
+#import "random.il.asm"
+#import "input.il.asm"
+#import "score.il.asm"
+#import "print.il.asm"
+#import "string.il.asm"
+#import "rle.il.asm"
+#import "disk.il.asm"
+#import "drawapplescreen.il.asm"
+#import "DrawAppleScreen.asm"
+#import "PrintMacros.asm"
+#import "SpriteManagement.asm"
+#import "honkheckbutt.il.asm"
+#import "userport.il.asm"
+// #import "Music.asm"   // Uncomment to include speaker music system
+// #import "music.il.asm"
+
+//===========================================================================

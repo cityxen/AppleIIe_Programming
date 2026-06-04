@@ -1,8 +1,9 @@
-;===========================================================================
-; CityXen Apple IIe Library - Print Macros Wrapper
-; !source this to include all print-related inline subroutines.
-;===========================================================================
+#importonce
+//===========================================================================
+// CityXen Apple IIe Library - Print Macros Wrapper
+// #import this to include all print-related inline subroutines.
+//===========================================================================
 
-!source "print.il.asm"
+#import "print.il.asm"
 
-;===========================================================================
+//===========================================================================
